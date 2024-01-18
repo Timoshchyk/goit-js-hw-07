@@ -5,16 +5,16 @@ function getRandomHexColor() {
 }
 const inputNumber = document.querySelector("input");
 const createBtn = document.querySelector("[data-create]");
-const destroyBtn = document.querySelector("[data-desroy]");
+const destroyBtn = document.querySelector("[data-destroy]");
 const boxElem = document.querySelector("#boxes");
 createBtn.addEventListener("click", onCreateBtnClick);
 destroyBtn.addEventListener("click", onDestroyBtnClick);
 const beginningWidth = 30;
-const beginningHeight = 30;
+const beginningHeigth = 30;
 function onCreateBtnClick() {
   onDestroyBtnClick();
   let width = beginningWidth;
-  let height = beginningHeight;
+  let height = beginningHeigth;
   let arr = [];
   const number = +inputNumber.value;
   if (number >= 1 && number <= 100) {

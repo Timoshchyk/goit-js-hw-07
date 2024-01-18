@@ -1,8 +1,8 @@
 const input = document.querySelector("#name-input");
-const dreeting = document.querySelector("#name-output");
+const greeting = document.querySelector("#name-output");
 input.addEventListener("input", onInputBlur);
-function onInputBlur(event) {
-    const name = input.ariaValue.trim();
+function onInputEvent(event) {
+    const name = input.value.trim();
     if (name === "") {
         greeting.textContent = "Anonymous";
     } else {
