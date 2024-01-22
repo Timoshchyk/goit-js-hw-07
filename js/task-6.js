@@ -14,7 +14,7 @@ const beginningHeigth = 30;
 function onCreateBtnClick() {
   onDestroyBtnClick();
   let width = beginningWidth;
-  let height = beginningHeigth;
+  let heigth = beginningHeigth;
   let arr = [];
   const number = +inputNumber.value;
   if (number >= 1 && number <= 100) {
